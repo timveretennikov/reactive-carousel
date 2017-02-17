@@ -1,5 +1,7 @@
 module.exports = {
-  "extends": "airbnb",
+  "extends":  [
+    "react-app"
+  ],
   "parser": "babel-eslint",
   "env": {
     "browser": true,
@@ -11,6 +13,7 @@ module.exports = {
   ],
   "rules": {
     "comma-dangle": ["error", "never"],
+    "linebreak-style": ["error", "windows"],
     "prefer-arrow-callback": 0,
     "func-names": 0,
     "import/no-extraneous-dependencies": 0,

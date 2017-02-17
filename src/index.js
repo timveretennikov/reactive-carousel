@@ -1,2 +1,3 @@
-// this should be the entry point to your library
-module.exports = {};
+import Carousel from './carousel'
+
+export default Carousel
