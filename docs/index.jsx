@@ -17,7 +17,7 @@ ReactDOM.render(
       <img  src="http://placehold.it/450x350/e33cf2/000000" />
       <img  src="http://placehold.it/450x250/3bed58/000000" />
       <img  src="http://placehold.it/450x150/e8382c/000000" />
-      <img  src="http://placehold.it/450x250/2ee4e8/000000" />
+      <img  src="http://placehold.it/450x250/2ee4e8/000000" caption="some text" />
     </Carousel>
   </div>,
   document.getElementById('app')
