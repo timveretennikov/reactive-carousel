@@ -1,3 +1,4 @@
+```javascript
 import Carousel from 'reactive-carousel'
 
 const YourComponent = () => {
@@ -9,6 +10,7 @@ const YourComponent = () => {
         </Carousel>
     )
 }
+```
 
 Just put some images inside the Carousel and specify width and height
 
