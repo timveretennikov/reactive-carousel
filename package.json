@@ -2,7 +2,7 @@
   "name": "reactive-carousel",
   "description": "A slideshow react component",
   "author": "Artem Veretennikov",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "scripts": {
     "start": "webpack-dev-server",
     "test": "jest",
@@ -75,6 +75,10 @@
   "peerDependencies": {
     "react": ">= 0.11.2 < 16.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timveretennikov/reactive-carousel.git"
+  },
   "jest": {
     "collectCoverage": true,
     "moduleFileExtensions": [
@@ -94,8 +98,5 @@
   "license": "MIT",
   "pre-push": [
     "test"
-  ],
-  "dependencies": {
-    "react-addons-clone-with-props": "^0.14.8"
-  }
+  ]
 }

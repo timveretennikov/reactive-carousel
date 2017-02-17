@@ -1,6 +1,6 @@
 import React from 'react'
 import CarouselElement from './carouselElement'
-import './carousel.css'
+import '../style.css'
 
 class Carousel extends React.Component {
     constructor(props) {
