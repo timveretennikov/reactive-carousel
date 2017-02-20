@@ -31,6 +31,10 @@
     border-radius: 3px 0 0 3px;
 }
 
+.reactive-carousel > .prev-nav {
+    left: 0;
+}
+
 .reactive-carousel > .prev-nav:hover, .next-nav:hover {
     background-color: rgba(0,0,0,0.8);
 }
@@ -72,6 +76,7 @@
     bottom: 8px;
     width: 100%;
     text-align: center;
+    left: 0;
 }
 
 .reactive-carousel > .rc-dot-container > .rc-active, .reactive-carousel > .rc-dot-container > .rc-dot:hover {
