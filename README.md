@@ -1,6 +1,6 @@
 ```javascript
-import Carousel from 'reactive-carousel'
-import CarouselElement from 'reactive-carousel/carouselElement'
+import Carousel, {CarouselElement} from 'reactive-carousel'
+
 
 const YourComponent = () => {
     return (

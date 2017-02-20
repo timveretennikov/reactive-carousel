@@ -2,7 +2,7 @@
   "name": "reactive-carousel",
   "description": "A slideshow react component",
   "author": "Artem Veretennikov",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "scripts": {
     "start": "webpack-dev-server",
     "test": "jest",

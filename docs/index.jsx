@@ -6,8 +6,7 @@ import 'purecss/build/pure.css'
 import './main.css'
 import '../style.css'
 
-import Carousel from '../src'
-import CarouselElement from '../src/carouselElement'
+import Carousel, {CarouselElement} from '../dist-modules'
 // Catalog - logoSrc="../images/logo.png"
 ReactDOM.render(
   <div>
