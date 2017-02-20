@@ -7,6 +7,8 @@ class Carousel extends React.Component {
         super(props)
 
         this.showSlide = this.showSlide.bind(this)
+        this.startAutoplay = this.startAutoplay.bind(this)
+        this.restartAutoplay = this.restartAutoplay.bind(this)
 
         this.state = {
             slideIndex: 0,
@@ -20,7 +22,32 @@ class Carousel extends React.Component {
         }
     }
 
-    showSlide(n) {
+    componentDidMount () {
+        debugger
+        if(this.props.autoplay) {
+            this.startAutoplay()
+        }
+    }
+
+    startAutoplay () {
+        this.setState({
+            autoplay: setInterval(()=> {
+                this.showSlide(this.state.slideIndex + 1)
+            }, this.props.interval ? this.props.interval : 3000)
+        })
+    }
+
+    restartAutoplay () {
+        if(this.state.autoplay) {
+            clearInterval(this.state.autoplay)
+            this.startAutoplay()
+        }
+    }
+
+    showSlide(n, isCalledByAutoplay = false) {
+        if(!isCalledByAutoplay) {
+            this.restartAutoplay()
+        }
         if (n > this.state.elements.length - 1) {
             this.setState({ slideIndex: 0 })
         } else if (n < 0) {

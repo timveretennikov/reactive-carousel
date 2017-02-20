@@ -6,12 +6,13 @@ import 'purecss/build/pure.css'
 import './main.css'
 import '../style.css'
 
-import Carousel, {CarouselElement} from '../dist-modules'
+import Carousel, {CarouselElement} from '../src'
 // Catalog - logoSrc="../images/logo.png"
 ReactDOM.render(
   <div>
     <Carousel width={450}
-      height={250}>
+      height={250}
+      autoplay={true}>
       <CarouselElement onClickCb={() => { alert('Hello!') }}
         imagePath="http://placehold.it/350x250/4286f4/000000"
         caption="Hello 1" />
