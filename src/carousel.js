@@ -29,6 +29,10 @@ class Carousel extends React.Component {
         }
     }
 
+    componentWillUnmount() {
+        this.stopAutoplay()
+    }
+
     startAutoplay() {
         this.setState({ isAutoplayPaused: false })
         this.setState({
