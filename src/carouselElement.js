@@ -6,7 +6,9 @@ const CarouselElement = ({isActive, onClickCb, imagePath, caption}, context) => 
             style={{ display: isActive ? 'block' : 'none' }}
             onClick={onClickCb}>
             <img src={imagePath}
-                style={{ maxHeight: context.height + 'px' }} />
+                alt="Image"
+                style={{ maxHeight: context.height + 'px',
+                         cursor: onClickCb ? 'pointer' : 'default'}} />
             <div className="rc-caption">{caption}</div>
         </div>
     )

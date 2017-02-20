@@ -12,7 +12,8 @@ ReactDOM.render(
   <div>
     <Carousel width={450}
       height={250}
-      autoplay={true}>
+      autoplay={true}
+      showAutoplayButton={true}>
       <CarouselElement onClickCb={() => { alert('Hello!') }}
         imagePath="http://placehold.it/350x250/4286f4/000000"
         caption="Hello 1" />
